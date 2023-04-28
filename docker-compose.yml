@@ -1,0 +1,24 @@
+version: "3"
+service: 
+  api:
+    build: .
+    depends_on:
+      - postgres
+    ports: 
+      - 4000:8000
+    volumes:
+      - ./: /usr/src/app:ro  
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    env_file:
+      - ./.env
+    # environment:
+    #   -
+  postgres:
+    image: postgres
+    # environment:
+    #   - 
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+
+volumes:
+  postgres-db:
