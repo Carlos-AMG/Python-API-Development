@@ -23,7 +23,7 @@ The Python API Development course covers the following topics:
 
 To get started with this repository, you will need to have Python and Flask installed on your local machine. You can clone this repository to your local machine using the following command:
 
-```git clone https://github.com/username/Python-API-Development.git```
+```git clone https://github.com/Carlos-AMG/Python-API-Development.git```
 
 Once you have cloned the repository, you can follow the instructions provided in the course materials to start building APIs using Python.
 
